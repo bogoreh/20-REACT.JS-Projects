@@ -1,0 +1,50 @@
+.theme-toggle {
+  position: relative;
+}
+
+.theme-toggle__icons {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle__sun,
+.theme-toggle__moon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.theme-toggle__sun {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+.theme-toggle__sun--active {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(180deg) scale(1);
+}
+
+.theme-toggle__moon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
+}
+
+.theme-toggle__moon--active {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+.theme-toggle:hover .theme-toggle__sun:not(.theme-toggle__sun--active) {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1.1);
+}
+
+.theme-toggle:hover .theme-toggle__moon:not(.theme-toggle__moon--active) {
+  transform: translate(-50%, -50%) rotate(-45deg) scale(0.6);
+}
+
+.theme-toggle__text {
+  font-weight: 600;
+}
