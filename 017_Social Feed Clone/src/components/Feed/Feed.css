@@ -1,0 +1,29 @@
+.feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feed-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.feed-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.feed-header p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

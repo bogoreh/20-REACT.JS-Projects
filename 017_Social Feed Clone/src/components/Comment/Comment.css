@@ -1,0 +1,26 @@
+.comment {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-text {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.comment-time {
+  font-size: 12px;
+  color: #999;
+}

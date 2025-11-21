@@ -1,0 +1,44 @@
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-profile.medium .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-profile.large .user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.user-username {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.user-bio {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
